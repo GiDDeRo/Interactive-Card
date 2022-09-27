@@ -1,0 +1,146 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: hsl(216, 12%, 8%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font-family: 'Overpass';
+}
+main {
+    background-color: hsl(213, 19%, 18%);
+    width: 23rem;
+    padding: 2rem;
+    height: 23rem;
+    border-radius: 2rem;
+}
+#container1 {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-between;
+}
+.star {
+    display: flex;
+    padding: 0.7rem;
+    width: fit-content;
+    background-color: hsla(216, 12%, 54%, 0.1);
+    border-radius: 50%;
+}
+.body1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 7rem;
+}
+article h2 {
+    color: white;
+}
+article p {
+    color: hsl(217, 12%, 63%);
+    font-size: 13px;
+    line-height: 20px;
+}
+.rates {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+.rates button {
+    height: 2.8rem;
+    width: 2.8rem;    
+    border-radius: 50%;
+    border: none;
+    color: hsl(217, 12%, 63%);
+    background-color: hsla(216, 12%, 54%, 0.1);
+    font-family: 'Overpass';
+    font-weight: 700;
+    transition: 0.5s;
+}
+.rates button:hover {
+    background-color: hsl(25, 97%, 53%);
+    color: white;
+}
+.rates button:focus {
+    background-color: hsl(216, 12%, 54%);
+    color: white;
+    transition: 0.5s;
+}
+.rates button:hover, .submit:hover {
+    cursor: pointer;
+}
+#submit {
+    width: 100%;
+    height: 2.3rem;
+    border-radius: 2rem;
+    background-color: hsl(25, 97%, 53%);
+    color: white;
+    border: none;
+    font-family: 'Overpass';
+    letter-spacing: 2px;
+}
+#submit:hover {
+    background-color: white;
+    color: hsl(25, 97%, 53%);
+    font-weight: bolder;
+}
+footer {
+    display: flex;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+}
+.attribution { 
+    font-size: 11px;
+    margin: auto;
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+#container2  {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    text-align: center;
+}
+#container2 img {
+    height: 7rem;
+}
+#text {
+    margin: 0 auto;
+    width: 12rem;
+    font-size: 13px;
+    color: hsl(25, 97%, 53%);
+    background-color: hsla(216, 12%, 54%, 0.1);
+    padding: 0.5rem 0.7rem;
+    border-radius: 1rem;
+}
+.body2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 35%;
+}
+
+@media (max-width: 375px) {
+    main {
+        width: 90%;
+        padding: 1.5rem;
+        border-radius: 1rem;
+    }
+    .body1 {
+        height: 8rem;
+    }
+    .rates button {
+        width: 2.4rem;
+        height: 2.4rem;
+    }
+    .text {
+        display: none;
+    }
+}
